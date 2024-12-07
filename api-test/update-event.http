@@ -1,0 +1,9 @@
+PUT http://localhost:8080/events/7
+Content-Type: application/json
+
+{
+    "name" : "Test sequence 7",
+    "description" : "This is the seventh test sequence",
+    "location" : "Gurgaon",
+    "dateTime" : "2024-12-07T15:30:00.000Z"
+}

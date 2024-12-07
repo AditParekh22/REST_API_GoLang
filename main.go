@@ -1,15 +1,17 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"example.com/rest-api/db"
+	"example.com/rest-api/routes"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
+	db.InitDB()
 	server := gin.Default()
 
-	server.GET("/events", getEvets)
+	routes.RegisterRoutes(server)
+
 	server.Run(":8080")
 
-}
-
-func getEvets(context *gin.Context) {
-	context.JSON(200, gin.H{"msg": "Heloo"})
 }

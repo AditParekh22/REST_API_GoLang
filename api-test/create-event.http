@@ -1,0 +1,9 @@
+POST http://localhost:8080/events
+Content-Type: application/json
+
+{
+    "name" : "Test sequence 4",
+    "description" : "This is the fourth test sequence",
+    "location" : "Gurgaon",
+    "dateTime" : "2024-12-07T15:30:00.000Z"
+}
